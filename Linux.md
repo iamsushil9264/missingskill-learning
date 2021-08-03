@@ -1,3 +1,5 @@
 ## History
-### Background Of Linux
-- in 1991 -created by Toward 
+## Popular Distribution
+## Other Distribution
+## Commands
+## File System
