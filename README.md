@@ -11,3 +11,21 @@
 - Introduction Of Git
 - Git Commands
 - Getting Start With Git 
+
+## 3. [Basic Building Block Of Web]()
+- Types Of Programming 
+- IP Adderess
+- IPv4
+- IPv6
+- Port
+- Web Ports
+- Web Server 
+- Http verbs
+- Http Header
+- Http Ports
+- Softwere License
+- Database
+- Cloud Providers
+- Code Repository
+- Project Management Tool
+- Dev Workflow
