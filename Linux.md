@@ -29,10 +29,23 @@
 > - NET BSD(router connection ,networking purpose)
 > - OPEN BSD(router connection ,networking purpose)
 ## Commands
- - ls(list)- list of the file in current folder
+  - ls(list)- list of the file in current folder
+    - `ls -l -h` - it stands for human readable 
+    - `ls -l -t` - ascending ordered
+    - `ls -l -r` - reverse order 
+    - `ls -l -F` - it adds at the end of directory more visual to identify
+    - `ls -htrF` - for more visual 
  - cd(change directory)- if we want to change one directory to another
+   - `cd` - back to users home
+   - `cd -` - holds the last position
+   - `cd ..` - one step back
+   - `cd ~` - users home folder
  - cp(copy)- copy file from one location to another 
  - mv(move)- cut or move one place to another 
+ - rm -remove directory remove only empty directory
+   - `rm file` -for file
+   - `rm -rf sushil` - for directory or folder it defenetly remove(rf-recursive force)
+   - `rm *` - for all
  - remove- it removes data permanently
  - pwd(present/print)- it showing the current directory 
  - who- how many users logins to the system or server(list of all them)
@@ -40,6 +53,8 @@
  - history- how many command have been running
  - exit- close the terminal and connection
  - cat- opening to file (display all content of file)
+   - `$cat > sushil`--this is entry to file, this is text file
+   - `$cat >> sushil`--for updating the file
  - echo- for printing (echo $PATH)
  - top- most used by devops, it gives all system level information, memory space and all
  - touch- it is used to create a file
