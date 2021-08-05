@@ -80,11 +80,9 @@
   - Array represent as {}.
 
 ### Scope 
-  - local scope -
-  - global scope -
   - Functional scope - limits to the function
   - Lexical scope - starts with curly bracase 
-
+    > first if variable is ES6if will check in lexicalscope first then .parent lexical scope then functional scope then parent .
 >Diference between lexical scope & function scope
  - lexical scope is always part of functional scope.
  - both functional & lexical have there own local and global scope 
