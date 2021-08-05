@@ -32,4 +32,12 @@
 
 ## 4. [JavaScript](https://github.com/iamsushil9264/missingskill-learning/blob/main/JavaScript.md)
 - History
-- 
+- Tech Debt
+- Control Statement
+- operator
+- Variable
+- Data Types
+- Scope
+- Function
+- Arrays
+- Object
