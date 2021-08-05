@@ -24,9 +24,9 @@
 ### Operator 
   - Arithmatic (+,-,*,%,++,--,+=,-=,*=,/=,==,===)
   - Logical (&& , || ,!)
-  - Bitwise
+  - Bitwise(&,|,^,~,>>,<<,>>>)
   - Ternary(?,:)
-  - Relation
+  - Relational(<=,>=,==,!=)
 
 ### Logical Operator 
   - `&&` 
@@ -41,12 +41,30 @@
     - true || true = true
     - false || false = false
 
-### Variable
+## Variable
  - JavaScript Variable is dynamic or  loose coupled  typed . it can hold any type of data.it is just placeholder.
+ - ES5-
+    - var
+      - re-declare 
+      - re-initialize
+      - hoisted
+      - local variable overrides the global declara
+      - tion 
+        - functional scope 
+        - global scope 
+  - ES6
+   - `let`
+     - > can not be re-declared but can be re-assigned
+   - `const`
+     - > can not be re-declared but can not be re-assigned
+   - `featurs`
+     - >lexical /block scope 
+     - >no hoisting 
+     - >lexical scope variable overrides the parents lexical,functional local or global.
 
 
 
-## Datatypes
+### Datatypes
  >datatypes are two types 
  > - Primitive data type
  > - Non-Primitive data type
@@ -97,28 +115,7 @@ copy by value best example is `xerox copy`
                                b|---[ ][ ][ ][ ][ ]```
  
 if we storing in variable in non primitive they make second memory location
-### Declaration
-  - ES5-
-    - var
-      - re-declare 
-      - re-initialize
-      - hoisted
-      - local variable overrides the global declara
-      - tion 
-        - functional scope 
-        - global scope 
-  - ES6
-   - `let`
-     - > can not be re-declared but can be re-assigned
-   - `const`
-     - > can not be re-declared but can not be re-assigned
-   - `featurs`
-     - >lexical /block scope 
-     - >no hoisting 
-     - >lexical scope variable overrides the parents lexical,functional local or global.
-
-
-
+ 
 ## Function
 - Introduction 
   > the function is a set of rules to perform some specific task
@@ -149,10 +146,110 @@ if we storing in variable in non primitive they make second memory location
  > in other language we can say class
  > it can hoisted
 
-### Higher Order function 
+### Higher Order function
+ - Funtion returning a funtion 
+ - Function passess a parameter
+ > any function which takes function as a parameter and returns function from a function
+ ``` 
+      function add(a,b){
+      const c=a+b;
+        return c;
+          }
+       function operate(operation){
+        let localfn;
+       if (operation && (typeof operation ==="function")){
+          localfn=operation;
+               }
+       else
+          localfn=function()
+          {
+          }
+       console.log("operate=>" typeof localfn,location);
+          return localfn;
+            }
+           const executefn=operate(print);
+           console.log("executefn=>" typeof executefn,executefn);
+           var d=executefn(1,3);
+           console.log(d);
+   ```
+    
 ### Pure function
-### Arrow function 
+ - > it is a function where i pass value it returns always same values.
  
+### IIFE(Immediately Invoked Function Expression )
+ - > second name "self executing function expression(SEF)
+ - > JavaScript does not have any private method like other languages
+ - > JavaScript by default started
+ `
+ so they created a new way so function can act as a priavte method that way they
+ implemented function called IIFE
+ 
+ var outside =(function(userid){
+               console.log("initialization");
+               function hello(value){
+               console.log("print" value,userid);
+               }
+               return hello
+               })(30)
+  
+ ` 
+### Arrow function 
+ - > it is always function expression or function assignment .
+   > it can't be function declaration because function declaration always need a function keyword it can't be hoisted
+ `
+ var b=()=>{
+ console.log("hii");
+ }
+ b();
+ 
+ `
+## Arrays 
+- > arrays are special varaible .which having capacity to different values
+- Length of array
+  - last index plus one 
+-### crreate an array
+- `
+     var name =["sushil","arun","jyoti","shiv"]
+ `
+ - built-in functions
+   - push
+     `
+        adds end of an  array
+     `
+   - pop
+      `
+        removes items from an aaray
+     `
+   - unShift
+       `
+        adds items beginning of an array
+       `
+   - shift
+        `
+        remove item beginning of an array
+     `
+   - concat 
+       `
+          for add two different array
+       `
+   - 
+     
+## Object
+- object is non primitive data type 
+- creating object
+  -1 `
+      key-value pair
+      var a={first:"sushil",secong:"arun",third:"jyoti"};
+
+     `
+  - 2 `
+          new
+          
+          var n1=new object();
+       `
+
+
+
 
 
                  
