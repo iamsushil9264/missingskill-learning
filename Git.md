@@ -1,5 +1,5 @@
 ## Introduction Of Git
-  - git is a version control system where the repository stord on server.it helps to work togher
+  - git is a version control system where the repository stored on server.it helps to work togher
 ## Git Commands
   - `git init` - to create empty repository
   - `git status` - current status git tree
